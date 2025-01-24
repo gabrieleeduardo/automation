@@ -1,17 +1,22 @@
 ---
-- name: Criar script para adicionar usuário ao grupo docker
+- name: Adicionar o usuário ao grupo Docker
   hosts: gbessa_hosts
   become: yes
   tasks:
-    - name: Criar o script para adicionar o usuário ao grupo docker
-      ansible.builtin.copy:
-        dest: /usr/local/bin/add_to_docker_group.sh
-        content: |
-          #!/bin/bash
-          sudo usermod -aG docker $USER
-          newgrp docker
-        mode: '0755'
+    - name: Verificar se o grupo docker existe
+      ansible.builtin.group:
+        name: docker
+        state: present
+      register: group_check
+
+    - name: Criar o grupo Docker se não existir
+      ansible.builtin.group:
+        name: docker
+        state: present
+      when: group_check.changed
+
+    - name: Adicionar o usuário ao grupo Docker
+      ansible.builtin.shell: "usermod -aG docker $USER"
     
-    - name: Executar o script para adicionar o usuário ao grupo docker
-      ansible.builtin.shell:
-        cmd: /usr/local/bin/add_to_docker_group.sh
+    - name: Atualizar o grupo do usuário para docker
+      ansible.builtin.shell: "newgrp docker"
