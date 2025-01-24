@@ -1,0 +1,266 @@
+2025-01-24 17:58:09,910 p=328558 u=gbessa n=ansible | ERROR! the role 'common' was not found in /l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/roles:/l/disk0/gbessa/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks
+
+The error appears to be in '/l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/install.yaml': line 49, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - common
+      ^ here
+
+2025-01-24 17:59:27,601 p=328679 u=gbessa n=ansible | ERROR! conflicting action statements: hosts, roles
+
+The error appears to be in '/l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/install.yaml': line 18, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name: Configuração Básica com Role
+      ^ here
+
+2025-01-24 18:00:00,239 p=328752 u=gbessa n=ansible | ERROR! the role 'common' was not found in /l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/roles:/l/disk0/gbessa/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks
+
+The error appears to be in '/l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/install.yaml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - common
+      ^ here
+
+2025-01-24 18:00:36,713 p=328833 u=gbessa n=ansible | ERROR! the role 'common' was not found in /l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/roles:/l/disk0/gbessa/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks
+
+The error appears to be in '/l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/install.yaml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - role: common
+      ^ here
+
+2025-01-24 18:00:46,189 p=328874 u=gbessa n=ansible | ERROR! the role 'common' was not found in /l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/roles:/l/disk0/gbessa/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks
+
+The error appears to be in '/l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/install.yaml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - role: common
+      ^ here
+
+2025-01-24 18:00:55,846 p=328926 u=gbessa n=ansible | ERROR! the role 'common/tasks/' was not found in /l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/roles:/l/disk0/gbessa/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks
+
+The error appears to be in '/l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/install.yaml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - role: common/tasks/
+      ^ here
+
+2025-01-24 18:01:07,786 p=328961 u=gbessa n=ansible | ERROR! the role 'common/tasks/' was not found in /l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/roles:/l/disk0/gbessa/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks
+
+The error appears to be in '/l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/install.yaml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - common/tasks/
+      ^ here
+
+2025-01-24 18:07:20,516 p=329381 u=gbessa n=ansible | ERROR! the role 'common' was not found in /l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/roles:/l/disk0/gbessa/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks
+
+The error appears to be in '/l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/install.yaml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - common
+      ^ here
+
+2025-01-24 18:07:53,990 p=329458 u=gbessa n=ansible | ERROR! the role 'common' was not found in /l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/roles:/l/disk0/gbessa/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks
+
+The error appears to be in '/l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/install.yaml': line 6, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - common
+      ^ here
+
+2025-01-24 18:08:41,213 p=329537 u=gbessa n=ansible | PLAY [Configuração Básica com Role] *************************************************************************************************************************************************
+2025-01-24 18:08:41,217 p=329537 u=gbessa n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************************************
+2025-01-24 18:08:41,461 p=329537 u=gbessa n=ansible | fatal: [gbessa_hosts]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"ansible.legacy.setup": {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.10"}, "failed": true, "module_stderr": "sudo: uma senha é necessária\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1, "warnings": ["Platform linux on host gbessa_hosts is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information."]}}, "msg": "The following modules failed to execute: ansible.legacy.setup\n"}
+2025-01-24 18:08:41,462 p=329537 u=gbessa n=ansible | PLAY RECAP **************************************************************************************************************************************************************************
+2025-01-24 18:08:41,462 p=329537 u=gbessa n=ansible | gbessa_hosts               : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-01-24 18:11:51,904 p=329756 u=gbessa n=ansible | PLAY [Configuração Básica com Role] *************************************************************************************************************************************************
+2025-01-24 18:11:51,908 p=329756 u=gbessa n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************************************
+2025-01-24 18:11:52,104 p=329756 u=gbessa n=ansible | fatal: [gbessa_hosts]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"ansible.legacy.setup": {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.10"}, "failed": true, "module_stderr": "sudo: uma senha é necessária\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1, "warnings": ["Platform linux on host gbessa_hosts is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information."]}}, "msg": "The following modules failed to execute: ansible.legacy.setup\n"}
+2025-01-24 18:11:52,105 p=329756 u=gbessa n=ansible | PLAY RECAP **************************************************************************************************************************************************************************
+2025-01-24 18:11:52,105 p=329756 u=gbessa n=ansible | gbessa_hosts               : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-01-24 18:12:04,826 p=329832 u=gbessa n=ansible | PLAY [Configuração Básica com Role] *************************************************************************************************************************************************
+2025-01-24 18:12:04,830 p=329832 u=gbessa n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************************************
+2025-01-24 18:12:05,051 p=329832 u=gbessa n=ansible | fatal: [gbessa_hosts]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"ansible.legacy.setup": {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.10"}, "failed": true, "module_stderr": "sudo: uma senha é necessária\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1, "warnings": ["Platform linux on host gbessa_hosts is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information."]}}, "msg": "The following modules failed to execute: ansible.legacy.setup\n"}
+2025-01-24 18:12:05,052 p=329832 u=gbessa n=ansible | PLAY RECAP **************************************************************************************************************************************************************************
+2025-01-24 18:12:05,052 p=329832 u=gbessa n=ansible | gbessa_hosts               : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-01-24 18:13:11,691 p=329972 u=gbessa n=ansible | PLAY [Configuração Básica com Role] *************************************************************************************************************************************************
+2025-01-24 18:13:11,695 p=329972 u=gbessa n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************************************
+2025-01-24 18:13:11,914 p=329972 u=gbessa n=ansible | fatal: [gbessa_hosts]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"ansible.legacy.setup": {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3.10"}, "failed": true, "module_stderr": "sudo: uma senha é necessária\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1, "warnings": ["Platform linux on host gbessa_hosts is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information."]}}, "msg": "The following modules failed to execute: ansible.legacy.setup\n"}
+2025-01-24 18:13:11,915 p=329972 u=gbessa n=ansible | PLAY RECAP **************************************************************************************************************************************************************************
+2025-01-24 18:13:11,915 p=329972 u=gbessa n=ansible | gbessa_hosts               : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-01-24 18:21:42,976 p=330850 u=gbessa n=ansible | PLAY [Configuração Básica com Role] *********************************************************************************************************************************************************
+2025-01-24 18:21:42,980 p=330850 u=gbessa n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2025-01-24 18:21:46,954 p=330850 u=gbessa n=ansible | [WARNING]: Platform linux on host gbessa_hosts is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-01-24 18:21:46,954 p=330850 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:21:46,959 p=330850 u=gbessa n=ansible | TASK [common : Criar diretório de logs] *****************************************************************************************************************************************************
+2025-01-24 18:21:47,190 p=330850 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:21:47,197 p=330850 u=gbessa n=ansible | TASK [common : Instalar pacotes básicos] ****************************************************************************************************************************************************
+2025-01-24 18:21:47,947 p=330850 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:21:47,957 p=330850 u=gbessa n=ansible | PLAY [Instalação do Git e Docker] ***********************************************************************************************************************************************************
+2025-01-24 18:21:47,965 p=330850 u=gbessa n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2025-01-24 18:21:51,781 p=330850 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:21:51,791 p=330850 u=gbessa n=ansible | TASK [Atualizar lista de pacotes] ***********************************************************************************************************************************************************
+2025-01-24 18:21:53,860 p=330850 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:21:53,870 p=330850 u=gbessa n=ansible | TASK [Instalar pacotes necessários] *********************************************************************************************************************************************************
+2025-01-24 18:21:54,554 p=330850 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:21:54,562 p=330850 u=gbessa n=ansible | TASK [Instalar dependências do Docker] ******************************************************************************************************************************************************
+2025-01-24 18:21:57,446 p=330850 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:21:57,452 p=330850 u=gbessa n=ansible | TASK [Adicionar a chave GPG oficial do Docker] **********************************************************************************************************************************************
+2025-01-24 18:21:57,670 p=330850 u=gbessa n=ansible | fatal: [gbessa_hosts]: FAILED! => {"changed": true, "cmd": ["curl", "-fsSL", "https://download.docker.com/linux/ubuntu/gpg", "|", "apt-key", "add", "-"], "delta": "0:00:00.011132", "end": "2025-01-24 18:21:57.652066", "msg": "non-zero return code", "rc": 2, "start": "2025-01-24 18:21:57.640934", "stderr": "curl: option -: is unknown\ncurl: try 'curl --help' or 'curl --manual' for more information", "stderr_lines": ["curl: option -: is unknown", "curl: try 'curl --help' or 'curl --manual' for more information"], "stdout": "", "stdout_lines": []}
+2025-01-24 18:21:57,671 p=330850 u=gbessa n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************
+2025-01-24 18:21:57,671 p=330850 u=gbessa n=ansible | gbessa_hosts               : ok=7    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-01-24 18:23:40,597 p=332516 u=gbessa n=ansible | PLAY [Configuração Básica com Role] *********************************************************************************************************************************************************
+2025-01-24 18:23:40,601 p=332516 u=gbessa n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2025-01-24 18:23:44,513 p=332516 u=gbessa n=ansible | [WARNING]: Platform linux on host gbessa_hosts is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-01-24 18:23:44,514 p=332516 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:23:44,519 p=332516 u=gbessa n=ansible | TASK [common : Criar diretório de logs] *****************************************************************************************************************************************************
+2025-01-24 18:23:44,746 p=332516 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:23:44,751 p=332516 u=gbessa n=ansible | TASK [common : Instalar pacotes básicos] ****************************************************************************************************************************************************
+2025-01-24 18:23:45,503 p=332516 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:23:45,519 p=332516 u=gbessa n=ansible | PLAY [Instalação do Git e Docker] ***********************************************************************************************************************************************************
+2025-01-24 18:23:45,527 p=332516 u=gbessa n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2025-01-24 18:23:49,368 p=332516 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:23:49,373 p=332516 u=gbessa n=ansible | TASK [Atualizar lista de pacotes] ***********************************************************************************************************************************************************
+2025-01-24 18:23:53,403 p=332516 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:23:53,408 p=332516 u=gbessa n=ansible | TASK [Instalar pacotes necessários] *********************************************************************************************************************************************************
+2025-01-24 18:23:54,105 p=332516 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:23:54,111 p=332516 u=gbessa n=ansible | TASK [Instalar dependências do Docker] ******************************************************************************************************************************************************
+2025-01-24 18:23:54,821 p=332516 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:23:54,828 p=332516 u=gbessa n=ansible | TASK [Adicionar a chave GPG oficial do Docker] **********************************************************************************************************************************************
+2025-01-24 18:23:55,069 p=332516 u=gbessa n=ansible | fatal: [gbessa_hosts]: FAILED! => {"changed": true, "cmd": ["curl", "-fsSL", "https://download.docker.com/linux/ubuntu/gpg", "|", "sudo", "apt-key", "add", "-"], "delta": "0:00:00.008030", "end": "2025-01-24 18:23:55.049083", "msg": "non-zero return code", "rc": 2, "start": "2025-01-24 18:23:55.041053", "stderr": "curl: option -: is unknown\ncurl: try 'curl --help' or 'curl --manual' for more information", "stderr_lines": ["curl: option -: is unknown", "curl: try 'curl --help' or 'curl --manual' for more information"], "stdout": "", "stdout_lines": []}
+2025-01-24 18:23:55,070 p=332516 u=gbessa n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************
+2025-01-24 18:23:55,070 p=332516 u=gbessa n=ansible | gbessa_hosts               : ok=7    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-01-24 18:29:08,474 p=334624 u=gbessa n=ansible | PLAY [Configuração Básica com Role] *********************************************************************************************************************************************************
+2025-01-24 18:29:08,478 p=334624 u=gbessa n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2025-01-24 18:29:12,419 p=334624 u=gbessa n=ansible | [WARNING]: Platform linux on host gbessa_hosts is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-01-24 18:29:12,419 p=334624 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:29:12,424 p=334624 u=gbessa n=ansible | TASK [common : Criar diretório de logs] *****************************************************************************************************************************************************
+2025-01-24 18:29:12,655 p=334624 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:29:12,662 p=334624 u=gbessa n=ansible | TASK [common : Instalar pacotes básicos] ****************************************************************************************************************************************************
+2025-01-24 18:29:13,367 p=334624 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:29:13,375 p=334624 u=gbessa n=ansible | PLAY [Instalar Docker em Debian/Ubuntu] *****************************************************************************************************************************************************
+2025-01-24 18:29:13,381 p=334624 u=gbessa n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2025-01-24 18:29:17,197 p=334624 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:29:17,208 p=334624 u=gbessa n=ansible | TASK [Atualizar repositórios APT] ***********************************************************************************************************************************************************
+2025-01-24 18:29:21,597 p=334624 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:29:21,602 p=334624 u=gbessa n=ansible | TASK [Instalar ca-certificates e curl] ******************************************************************************************************************************************************
+2025-01-24 18:29:22,257 p=334624 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:29:22,263 p=334624 u=gbessa n=ansible | TASK [Criar diretório para as chaves do APT] ************************************************************************************************************************************************
+2025-01-24 18:29:22,439 p=334624 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:29:22,444 p=334624 u=gbessa n=ansible | TASK [Baixar chave GPG do Docker] ***********************************************************************************************************************************************************
+2025-01-24 18:29:22,867 p=334624 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:29:22,879 p=334624 u=gbessa n=ansible | TASK [Ajustar permissões da chave GPG] ******************************************************************************************************************************************************
+2025-01-24 18:29:23,053 p=334624 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:29:23,060 p=334624 u=gbessa n=ansible | TASK [Adicionar o repositório Docker à lista de fontes do APT] ******************************************************************************************************************************
+2025-01-24 18:29:23,312 p=334624 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:29:23,320 p=334624 u=gbessa n=ansible | TASK [Atualizar novamente os repositórios APT] **********************************************************************************************************************************************
+2025-01-24 18:30:05,083 p=334624 u=gbessa n=ansible | fatal: [gbessa_hosts]: FAILED! => {"changed": false, "msg": "Failed to update apt cache: W:Atualizações a partir de tal repositório não podem ser feitas de forma segura e estão, portanto, desativadas por definição., W:See apt-secure(8) manpage for repository creation and user configuration details., E:The repository 'https://download.docker.com/linux/debian jammy Release' does not have a Release file."}
+2025-01-24 18:30:05,084 p=334624 u=gbessa n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************
+2025-01-24 18:30:05,084 p=334624 u=gbessa n=ansible | gbessa_hosts               : ok=10   changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-01-24 18:32:22,873 p=339759 u=gbessa n=ansible | PLAY [Configuração Básica com Role] *********************************************************************************************************************************************************
+2025-01-24 18:32:22,877 p=339759 u=gbessa n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2025-01-24 18:32:26,973 p=339759 u=gbessa n=ansible | [WARNING]: Platform linux on host gbessa_hosts is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-01-24 18:32:26,973 p=339759 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:32:26,984 p=339759 u=gbessa n=ansible | TASK [common : Criar diretório de logs] *****************************************************************************************************************************************************
+2025-01-24 18:32:27,227 p=339759 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:32:27,236 p=339759 u=gbessa n=ansible | TASK [common : Instalar pacotes básicos] ****************************************************************************************************************************************************
+2025-01-24 18:32:28,097 p=339759 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:32:28,111 p=339759 u=gbessa n=ansible | PLAY [Instalar Docker em Debian/Ubuntu] *****************************************************************************************************************************************************
+2025-01-24 18:32:28,120 p=339759 u=gbessa n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2025-01-24 18:32:32,426 p=339759 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:32:32,436 p=339759 u=gbessa n=ansible | TASK [Atualizar repositórios APT] ***********************************************************************************************************************************************************
+2025-01-24 18:33:13,643 p=339759 u=gbessa n=ansible | fatal: [gbessa_hosts]: FAILED! => {"changed": false, "msg": "Failed to update apt cache: W:Atualizações a partir de tal repositório não podem ser feitas de forma segura e estão, portanto, desativadas por definição., W:See apt-secure(8) manpage for repository creation and user configuration details., E:The repository 'https://download.docker.com/linux/debian jammy Release' does not have a Release file."}
+2025-01-24 18:33:13,644 p=339759 u=gbessa n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************
+2025-01-24 18:33:13,644 p=339759 u=gbessa n=ansible | gbessa_hosts               : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-01-24 18:36:42,827 p=344324 u=gbessa n=ansible | PLAY [Configuração Básica com Role] *********************************************************************************************************************************************************
+2025-01-24 18:36:42,831 p=344324 u=gbessa n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2025-01-24 18:36:46,782 p=344324 u=gbessa n=ansible | [WARNING]: Platform linux on host gbessa_hosts is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-01-24 18:36:46,782 p=344324 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:36:46,792 p=344324 u=gbessa n=ansible | TASK [common : Criar diretório de logs] *****************************************************************************************************************************************************
+2025-01-24 18:36:47,044 p=344324 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:36:47,053 p=344324 u=gbessa n=ansible | TASK [common : Instalar pacotes básicos] ****************************************************************************************************************************************************
+2025-01-24 18:36:47,823 p=344324 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:36:47,830 p=344324 u=gbessa n=ansible | PLAY [Remover pacotes e repositório Docker de Debian] ***************************************************************************************************************************************
+2025-01-24 18:36:47,836 p=344324 u=gbessa n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2025-01-24 18:36:51,583 p=344324 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:36:51,592 p=344324 u=gbessa n=ansible | TASK [Remover pacotes Docker antigos] *******************************************************************************************************************************************************
+2025-01-24 18:36:54,041 p=344324 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:36:54,053 p=344324 u=gbessa n=ansible | TASK [Remover o arquivo do repositório Docker] **********************************************************************************************************************************************
+2025-01-24 18:36:54,219 p=344324 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:36:54,229 p=344324 u=gbessa n=ansible | TASK [Remover a chave GPG do Docker] ********************************************************************************************************************************************************
+2025-01-24 18:36:54,400 p=344324 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:36:54,407 p=344324 u=gbessa n=ansible | TASK [Atualizar repositórios APT após remoção] **********************************************************************************************************************************************
+2025-01-24 18:36:58,481 p=344324 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:36:58,484 p=344324 u=gbessa n=ansible | PLAY [Instalar Docker em Ubuntu] ************************************************************************************************************************************************************
+2025-01-24 18:36:58,490 p=344324 u=gbessa n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2025-01-24 18:37:02,254 p=344324 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:37:02,258 p=344324 u=gbessa n=ansible | TASK [Atualizar repositórios APT] ***********************************************************************************************************************************************************
+2025-01-24 18:37:04,356 p=344324 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:37:04,363 p=344324 u=gbessa n=ansible | TASK [Instalar ca-certificates e curl] ******************************************************************************************************************************************************
+2025-01-24 18:37:05,044 p=344324 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:37:05,054 p=344324 u=gbessa n=ansible | TASK [Criar diretório para as chaves do APT] ************************************************************************************************************************************************
+2025-01-24 18:37:05,223 p=344324 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:37:05,228 p=344324 u=gbessa n=ansible | TASK [Baixar chave GPG do Docker] ***********************************************************************************************************************************************************
+2025-01-24 18:37:05,663 p=344324 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:37:05,688 p=344324 u=gbessa n=ansible | TASK [Ajustar permissões da chave GPG] ******************************************************************************************************************************************************
+2025-01-24 18:37:05,860 p=344324 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:37:05,866 p=344324 u=gbessa n=ansible | TASK [Adicionar o repositório Docker à lista de fontes do APT] ******************************************************************************************************************************
+2025-01-24 18:37:06,016 p=344324 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:37:06,021 p=344324 u=gbessa n=ansible | TASK [Atualizar novamente os repositórios APT] **********************************************************************************************************************************************
+2025-01-24 18:37:11,744 p=344324 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:37:11,750 p=344324 u=gbessa n=ansible | TASK [Instalar pacotes do Docker] ***********************************************************************************************************************************************************
+2025-01-24 18:37:40,516 p=344324 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:37:40,517 p=344324 u=gbessa n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************
+2025-01-24 18:37:40,517 p=344324 u=gbessa n=ansible | gbessa_hosts               : ok=17   changed=9    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-01-24 18:48:46,584 p=350062 u=gbessa n=ansible | ERROR! Empty playbook, nothing to do: /l/disk0/gbessa/Documentos/gabrieleeduardo/automation/playbooks/post-installation-docker.yaml
+2025-01-24 18:49:05,616 p=350136 u=gbessa n=ansible | PLAY [Criar script para adicionar usuário ao grupo docker] **********************************************************************************************************************************
+2025-01-24 18:49:05,621 p=350136 u=gbessa n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2025-01-24 18:49:10,318 p=350136 u=gbessa n=ansible | [WARNING]: Platform linux on host gbessa_hosts is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-01-24 18:49:10,318 p=350136 u=gbessa n=ansible | ok: [gbessa_hosts]
+2025-01-24 18:49:10,327 p=350136 u=gbessa n=ansible | TASK [Criar o script para adicionar o usuário ao grupo docker] ******************************************************************************************************************************
+2025-01-24 18:49:10,702 p=350136 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:49:10,710 p=350136 u=gbessa n=ansible | TASK [Executar o script para adicionar o usuário ao grupo docker] ***************************************************************************************************************************
+2025-01-24 18:49:11,262 p=350136 u=gbessa n=ansible | changed: [gbessa_hosts]
+2025-01-24 18:49:11,264 p=350136 u=gbessa n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************
+2025-01-24 18:49:11,264 p=350136 u=gbessa n=ansible | gbessa_hosts               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

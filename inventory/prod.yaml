@@ -1,0 +1,8 @@
+all:
+  hosts:
+    gbessa_hosts:
+      ansible_connection: local
+  children:
+    web_servers:
+      hosts:
+        192.168.1.12:

@@ -1,0 +1,13 @@
+---
+- name: Criar diretório de logs
+  file:
+    path: /var/log/custom_logs
+    state: directory
+    mode: '0755'
+
+- name: Instalar pacotes básicos
+  apt:
+    name:
+      - vim
+      - htop
+    state: present
